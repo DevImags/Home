@@ -60,7 +60,7 @@ button {
     align-items: center;
     background-color: rgb(0, 200, 200);
     border-radius: 5px;
-    color: white;
+    color: grey;
     cursor: pointer;
     font-weight: 800;
     font-size: 1rem;
