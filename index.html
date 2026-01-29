@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Promoções Imperdiveis</title>
-  <!-- Importa o CSS externo -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Promoções toda hora</title>
+  <link rel="icon" type="image/png" href="Icon/icon.1.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Links de Afiliados — Mercado Livre</h1>
-    <p>Centralize seus links de divulgação e campanhas.</p>
-    <input id="search" type="search" placeholder="Buscar por título, categoria ou campanha…" />
-    <button id="toggleTheme">Modo claro/escuro</button>
+    <div class="header">
+      <!-- Logo -->
+      <div class="logo">Promoções Toda Hora</div>
+
+      <!-- Menu de navegação -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cupons</a></li>
+          <li><a href="#">+ Buscados</a></li>
+          <li><a href="#">+ Melhores Preços</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão hambúrguer -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Produtos em Destaque</h2>
-      <div class="grid">
-        <article class="card" data-title="Fone Bluetooth XYZ" data-category="Eletrônicos" data-campaign="Q1-2026">
-          <a href="https://www.mercadolivre.com.br/SEU-LINK-DE-AFILIADO" target="_blank">Fone Bluetooth XYZ</a>
-          <p>Eletrônicos • Campanha: Q1-2026</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Campanhas Ativas</h2>
-      <div class="grid">
-        <article class="card" data-title="Smart TV 50'' 4K" data-category="Eletrônicos" data-campaign="Semana-da-Tecnologia">
-          <a href="https://www.mercadolivre.com.br/SEU-LINK-DE-AFILIADO" target="_blank">Smart TV 50'' 4K</a>
-          <p>Eletrônicos • Campanha: Semana-da-Tecnologia</p>
-        </article>
-      </div>
-    </section>
+    <div class="main">
+      <h1>Bem-vindo!</h1>
+      <p>Aqui você encontra promoções toda hora.</p>
+    </div>
   </main>
 
-  <!-- Importa o JS externo -->
   <script src="script.js"></script>
 </body>
 </html>
