@@ -2,59 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Compre eletrônicos, acessórios e muito mais com entrega rápida.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>As Melhores Promoções</title>
-  <link rel="icon" type="image/png" href="Icon/icon.1.png">
+  <title>Promoções</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="header">
-      <!-- Logo -->
-      <div class="logo">Promoções Toda Hora dos Melhores Marketplace</div>
+      <div class="logo">Promoções</div>
 
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Cupons">Cupons</a></li>
-          <li><a href="Maiores-Descontos">Super Descontos</a></li>
-          <li><a href="#+Buscados">+ Buscados</a></li>
-          <li><a href="#Melhores-Preços">Melhores Preços</a></li>
-          <li><a href="#Sobre">Sobre</a></li>
-        </ul>
-      </nav>
+      <!-- Barra de busca simples -->
+      <div class="top-search">
+        <input type="text" placeholder="Buscar ofertas, cupons ou produtos">
+        <button>Buscar</button>
+      </div>
 
-      <!-- Botao menu -->
-      <div class="menu-home" onclick="toggleMenu()">
+      <!-- Menu hambúrguer (mantido) -->
+      <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cupons</a></li>
+          <li><a href="#">Super Descontos</a></li>
+          <li><a href="#">Mais Buscados</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-<main>
-  <div class="main">
-    <h1>Bem-vindo!!</h1>
-    <p>...</p>
+  <main>
+    <div class="main">
+      <h1>Bem-vindo</h1>
+      <p>As melhores ofertas reunidas em um só lugar.</p>
 
-    <!-- Card promocional dentro da área principal -->
-    <div class="promo-card">
-      <a href="https://mercadolivre.com/sec/19qNNAP" target="_blank">
+      <div class="promo-card">
         <img src="img/img 2.webp" alt="Produto em promoção" class="promo-img">
-      </a>
-      <div class="promo-content">
-        <h2>Oferta Relâmpago 🔥</h2>
-        <p>Maquininha de cortar Cabelo e Babeador com 55% OFF por tempo limitado!</p>
-        <a href="https://mercadolivre.com/sec/19qNNAP" class="promo-btn">Ver Cupom</a>
+        <div class="promo-content">
+          <h2>Oferta Relâmpago 🔥</h2>
+          <p>Maquininha de cortar Cabelo e Babeador com 55% OFF por tempo limitado!</p>
+          <a href="#" class="promo-btn">Ver oferta</a>
+        </div>
       </div>
     </div>
-
-  </div>
-</main>
-
+  </main>
 
   <script src="script.js"></script>
 </body>
