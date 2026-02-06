@@ -18,9 +18,9 @@ html, body {
   padding: 0;
   overflow-x: hidden;  /* evita scroll lateral */
   overflow-y: auto;    /* permite scroll vertical */
-    background: radial-gradient(1200px 600px at 10% 0%, rgba(16, 96, 255, 0.25), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(180deg, #1e4f89 0%, #003353 45%, #183853 100%);
-    color: #eaf3ff;
-  color: #eaf3ff;
+  background: radial-gradient(1200px 600px at 10% 0%, rgb(87 166 255), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(5deg, #214a9e 45%, #38a3ff 100%);
+  color: #ffffff;
+  color: #ffffff;
 }
 
 :root{
@@ -286,7 +286,7 @@ a {
 }
 
 .aff-btn-primary {
-  background: linear-gradient(180deg, var(--aff-yellow), #ffd84d);
+  background: linear-gradient(180deg, #ffffff);
   color: #0b1d2e;
   box-shadow: 0 10px 22px rgba(255, 204, 0, 0.22);
 }
@@ -659,11 +659,7 @@ a {
   position: relative;
   height: 140px;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background:
-    radial-gradient(140px 80px at 30% 35%, rgba(255, 204, 0, 0.22), transparent 60%),
-    radial-gradient(160px 100px at 70% 65%, rgba(11, 94, 215, 0.38), transparent 60%),
-    linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.02));
+  border: 2px solid rgb(255 255 255 / 12%);
   overflow: hidden;
 }
 
