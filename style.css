@@ -18,9 +18,8 @@ html, body {
   padding: 0;
   overflow-x: hidden;  /* evita scroll lateral */
   overflow-y: auto;    /* permite scroll vertical */
-  background: radial-gradient(1200px 600px at 10% 0%, rgba(16, 96, 255, 0.25), transparent 55%),
-              radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%),
-              linear-gradient(180deg, #021a2c 0%, #062c43 45%, #061f33 100%);
+    background: radial-gradient(1200px 600px at 10% 0%, rgba(16, 96, 255, 0.25), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(180deg, #1e4f89 0%, #003353 45%, #183853 100%);
+    color: #eaf3ff;
   color: #eaf3ff;
 }
 
@@ -836,7 +835,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .aff-products-grid { grid-template-columns: 1fr; }
+.aff-products-grid { grid-template-columns: repeat(4, 1fr); }
 
   .promo-card {
     flex-direction: column;
@@ -852,6 +851,95 @@ a {
     display: none; /* em mobile fica mais limpo, dots + auto resolve */
   }
 }
+/* ===== FOOTER ===== */
+.footer {
+    background: #042038;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 36px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+/* Marca */
+.footer-brand .brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e1edff;
+}
+
+.footer-brand p {
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #6087a0;
+}
+
+/* Colunas */
+.footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #6087a0;
+}
+
+.footer-col a:hover {
+  color: #1c77ff;
+}
+
+/* Redes sociais */
+.footer-social .social-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Linha inferior */
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-wrap {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-social .social-icons {
+    margin-top: 6px;
+  }
+}
+
 
 /* Acessibilidade básica */
 @media (prefers-reduced-motion: reduce) {
