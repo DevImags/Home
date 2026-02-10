@@ -1,18 +1,19 @@
 /* ======================================================
-   MENU MOBILE (existente)
+   MENU MOBILE
 ====================================================== */
 function toggleMenu() {
   const nav = document.querySelector(".header nav ul");
+  const menuBtn = document.querySelector(".menu");
   if (nav) nav.classList.toggle("show");
+  if (menuBtn) menuBtn.classList.toggle("open");
 }
+
 
 /* ======================================================
    CARD CMS / ADMIN
 ====================================================== */
-
 const CARD_KEY = "offers_admin_v1";
 
-/* ===== LÊ OS CARDS DO HTML (1ª VEZ) ===== */
 function readCardsFromDOM() {
   return [...document.querySelectorAll(".offer-card")].map(card => ({
     id: crypto.randomUUID(),
@@ -57,9 +58,8 @@ function renderCards() {
 }
 
 /* ======================================================
-   ADMIN MODAL (ÚNICO)
+   ADMIN MODAL
 ====================================================== */
-
 const overlay = document.createElement("div");
 overlay.className = "admin-overlay";
 overlay.style.display = "none";
@@ -87,12 +87,10 @@ overlay.innerHTML = `
 
 document.body.appendChild(overlay);
 
-/* ===== FECHAR AO CLICAR FORA ===== */
 overlay.addEventListener("click", e => {
   if (e.target === overlay) overlay.style.display = "none";
 });
 
-/* ===== ABRIR ADMIN ===== */
 const profileBtn = document.querySelector(".profile-btn");
 if (profileBtn) {
   profileBtn.addEventListener("click", () => {
@@ -100,21 +98,18 @@ if (profileBtn) {
   });
 }
 
-/* ATALHO SECRETO */
 document.addEventListener("keydown", e => {
   if (e.ctrlKey && e.altKey && e.key.toLowerCase() === "a") {
     overlay.style.display = "flex";
   }
 });
 
-/* ===== REFERÊNCIAS DOS INPUTS ===== */
 const badgeInput = overlay.querySelector("#a-badge");
 const titleInput = overlay.querySelector("#a-title");
 const oldInput   = overlay.querySelector("#a-old");
 const priceInput = overlay.querySelector("#a-price");
 const linkInput  = overlay.querySelector("#a-link");
 
-/* ===== ADICIONAR CARD ===== */
 overlay.querySelector("#add-card").onclick = () => {
   const cards = JSON.parse(localStorage.getItem(CARD_KEY)) || [];
 
@@ -137,7 +132,6 @@ overlay.querySelector("#add-card").onclick = () => {
   linkInput.value = "";
 };
 
-/* ===== EXPORTAR ===== */
 overlay.querySelector("#export").onclick = () => {
   const data = localStorage.getItem(CARD_KEY);
   const blob = new Blob([data], { type: "application/json" });
@@ -148,7 +142,6 @@ overlay.querySelector("#export").onclick = () => {
   a.click();
 };
 
-/* ===== IMPORTAR ===== */
 overlay.querySelector("#import").onchange = e => {
   const file = e.target.files[0];
   if (!file) return;

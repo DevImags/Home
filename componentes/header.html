@@ -1,45 +1,41 @@
-  <!-- =========================================================
-       HEADER (MANTIDO: estrutura + classes + hamburger onclick)
-       ========================================================= -->
-  <header>
-    <div class="header">
-      <!-- Logo (classe mantida) -->
-      <div class="logo">SrPromoções</div>
-
-      <!-- Busca (NOVO: aff-*) -->
-      <div class="aff-search" role="search" aria-label="Busca de ofertas">
-        <input class="aff-search-input" type="search" placeholder="Buscar ofertas, cupons e produtos..." aria-label="Buscar" />
-        <button class="aff-search-btn" type="button" aria-label="Pesquisar">🔍</button>
-      </div>
-
-      <!-- Ícones (NOVO: aff-*) -->
-      <div class="aff-actions" aria-label="Ações rápidas">
-        <a class="aff-action" href="#Favoritos" aria-label="Favoritos" title="Favoritos">♥</a>
-        <a class="aff-action" href="#Carrinho" aria-label="Carrinho" title="Carrinho">🛒</a>
-        <a class="aff-action" href="#Conta" aria-label="Conta" title="Conta">👤</a>
-      </div>
-
-      <!-- Menu de navegação (MANTIDO: nav > ul + anchors existentes) -->
-      <nav aria-label="Categorias">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Cupons">Cupons</a></li>
-          <li><a href="#Buscados">+ Buscados</a></li>
-          <li><a href="#Precos">Melhores Preços</a></li>
-          <li><a href="#Sobre">Sobre</a></li>
-
-          <!-- Pode adicionar novos, sem remover os existentes -->
-          <li class="aff-only-desktop"><a href="#Celulares">Celulares</a></li>
-          <li class="aff-only-desktop"><a href="#Informatica">Informática</a></li>
-          <li class="aff-only-desktop"><a href="#Casa">Casa</a></li>
-        </ul>
-      </nav>
-
-      <!-- Botão menu (MANTIDO: onclick + spans) -->
-      <div class="hamburger" onclick="toggleMenu()" aria-label="Abrir/fechar menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+<header>
+  <div class="header">
+    <div class="logo">
+      <img src="/img/img 1.PNG" alt="logo">
+      <span>SrPromoções</span>
     </div>
-  </header>
+
+    <!-- Busca (NOVO: aff-*) -->
+    <div class="aff-search" role="search" aria-label="Busca de ofertas">
+      <input class="aff-search-input" type="search" placeholder="Buscar ofertas, cupons e produtos..."
+        aria-label="Buscar" />
+      <button class="aff-search-btn" type="button" aria-label="Pesquisar">
+        <img src="/icons/Lupa.png" alt="Buscar">
+      </button>
+    </div>
+
+    <!-- Menu de navegação (MANTIDO: nav > ul + anchors existentes) -->
+    <nav aria-label="Categorias">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Cupons">Cupons</a></li>
+        <li><a href="#Buscados">+ Buscados</a></li>
+        <li><a href="#Precos">Melhores Preços</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+
+        <!-- Pode adicionar novos, sem remover os existentes -->
+        <li class="aff-only-desktop"><a href="#Celulares">Celulares</a></li>
+        <li class="aff-only-desktop"><a href="#Informatica">Informática</a></li>
+        <li class="aff-only-desktop"><a href="#Casa">Casa</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botão menu (MANTIDO: onclick + spans) -->
+    <div class="menu" onclick="toggleMenu()" aria-label="Abrir/fechar menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+

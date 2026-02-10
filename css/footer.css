@@ -52,78 +52,7 @@
   background: rgba(255,255,255,0.10);
 }
 
-@media (max-width: 1024px) {
-  .aff-products-grid { grid-template-columns: repeat(2, 1fr); }
-  .aff-categories { grid-template-columns: repeat(3, 1fr); }
-  .aff-banners { grid-template-columns: 1fr; }
-  .aff-only-desktop { display: none; }
-}
-
-@media (max-width: 768px) {
-  .header {
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      "logo burger"
-      "search search"
-      "actions actions"
-      "nav nav";
-  }
-
-  .logo { font-size: 1.1rem; }
-
-  .hamburger { display: flex; }
-
-  .header nav ul {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 8px;
-    height: 0;
-    overflow: hidden;
-    padding: 0 10px;
-    border-radius: 14px;
-    transition: height 0.28s ease, padding 0.28s ease;
-  }
-
-  .header nav ul.show {
-    height: 320px;
-    padding: 10px;
-  }
-
-  .header nav ul a {
-    justify-content: flex-start;
-  }
-
-  .aff-actions {
-    justify-content: flex-start;
-  }
-
-  .aff-hero-title { font-size: 1.6rem; }
-
-  .aff-welcome {
-    grid-template-columns: 1fr;
-  }
-
-  .aff-welcome-side {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-.aff-products-grid { grid-template-columns: repeat(4, 1fr); }
-
-  .promo-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .promo-img {
-    width: 100%;
-    height: 140px;
-  }
-
-  .aff-hero-arrow {
-    display: none;
-  }
-}
+  
 .footer {
     background: #042038;
     border-top: 1px solid #e5e7eb;

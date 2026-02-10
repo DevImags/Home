@@ -1,26 +1,5 @@
-/* =========================================================
-   BASE (mantém fonte, ajusta scroll e evita overflow lateral)
-   ========================================================= */
 
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* REGRA CRÍTICA: permitir rolagem vertical e bloquear horizontal */
-html, body {
-  height: auto;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;  /* evita scroll lateral */
-  overflow-y: auto;    /* permite scroll vertical */
-  background: radial-gradient(1200px 600px at 10% 0%, rgb(87 166 255), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(5deg, #214a9e 45%, #38a3ff 100%);
-  color: #ffffff;
-}
 
 :root{
   --aff-blue: #0b5ed7;
@@ -35,7 +14,25 @@ html, body {
   --aff-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
-/* Links básicos */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: radial-gradient(1200px 600px at 10% 0%, rgb(87 166 255), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(5deg, #214a9e 45%, #38a3ff 100%);
+  color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
