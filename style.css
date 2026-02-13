@@ -29,9 +29,20 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: radial-gradient(1200px 600px at 10% 0%, rgb(87 166 255), transparent 55%), radial-gradient(900px 500px at 90% 10%, rgba(255, 204, 0, 0.12), transparent 55%), linear-gradient(5deg, #214a9e 45%, #38a3ff 100%);
+
+  /* Gradiente diagonal mais intenso */
+  background: linear-gradient(
+    to bottom right,
+    rgb(55, 0, 255) 0%,   /* azul claro - amanhecer */
+    rgb(55, 0, 255) 25%,  /* intermediário */
+    rgb(55, 0, 255) 50%,  /* meio do dia */
+    rgb(0, 0, 0) 75%,  /* escurecendo */
+    rgb(0, 0, 0) 100%  /* azul profundo - anoitecer */
+  );
+
   color: #ffffff;
 }
+
 
 a {
   text-decoration: none;
